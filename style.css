@@ -6,13 +6,24 @@ h1 {
     margin: 70px 100px 70px 100px;
 }
 .phone-screen {
-    max-width: 15rem;
+    max-width: 16rem;
 }
 
 
 .circle {
-    width: 374px;
+    position: absolute;
+    width: 25rem;
 }
+
+.circle-sm {
+    position: absolute;
+    height: 0.75rem;
+    width: 0.75rem;
+    fill: #2937f0;
+    top: 20%;
+    right: 13%;
+}
+
 
 .app-btn {
     height: 3rem;
