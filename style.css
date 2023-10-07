@@ -1,0 +1,19 @@
+h1 {
+    font-weight: 300;
+}
+
+.section-pt {
+    margin: 70px 100px 70px 100px;
+}
+.phone-screen {
+    max-width: 15rem;
+}
+
+
+.circle {
+    width: 374px;
+}
+
+.app-btn {
+    height: 3rem;
+}
