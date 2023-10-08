@@ -1,9 +1,14 @@
+* {
+    box-sizing: border-box;
+}
 h1 {
     font-weight: 300;
 }
 
-.section-pt {
-    margin: 70px 100px 70px 100px;
+.section-fst {
+    
+    padding-top: 9.5rem;
+    padding-bottom: 5rem;
 }
 .phone-screen {
     max-width: 16rem;
@@ -13,6 +18,12 @@ h1 {
 .circle {
     position: absolute;
     width: 25rem;
+}
+
+.circle-scd {
+    position: absolute;
+    width: 20rem;
+    left: 3%;
 }
 
 .circle-sm {
@@ -28,3 +39,12 @@ h1 {
 .app-btn {
     height: 3rem;
 }
+
+
+.logo {
+    height: 3rem;
+}
+
+.gradient-bg {
+    background-image: linear-gradient(to right, #2937f0, #9f1ae2);
+  }
