@@ -8,11 +8,17 @@ h1 {
 .section-fst {
     
     padding-top: 9.5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 5rem; }
+
+.font-kanit {
+    font-family: 'Kanit', sans-serif;
 }
+
+
 .phone-screen {
     max-width: 16rem;
 }
+
 
 
 .circle {
@@ -30,11 +36,40 @@ h1 {
     position: absolute;
     height: 0.75rem;
     width: 0.75rem;
-    fill: #2937f0;
-    top: 20%;
-    right: 13%;
+    fill: #0d1ad1;
+    top: 10%;
+    right: 8%;
 }
 
+.circle-sm-btm {
+    position: absolute;
+    height: 0.75rem;
+    width: 0.75rem;
+    fill: #0d1ad1;
+    bottom: 15%;
+    left: 7%;
+}
+
+.circle-scd-sm {
+    position: absolute;
+    height: 0.75rem;
+    width: 0.75rem;
+    fill: #0d1ad1;
+    bottom: 15%;
+    left: 7%;
+}
+
+.circle-scd-sm-btm {
+    position: absolute;
+    height: 0.75rem;
+    width: 0.75rem;
+    fill: #0d1ad1;
+    top: 10%;
+    right: 8%;
+}
+.my-img-crc {
+    object-fit: cover !important;
+  }
 
 .app-btn {
     height: 3rem;
@@ -46,5 +81,52 @@ h1 {
 }
 
 .gradient-bg {
-    background-image: linear-gradient(to right, #2937f0, #9f1ae2);
+    background-image: linear-gradient(to right, #0d1ad1, #3c8696);
+  }
+
+.icon-size {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.icon-gradient {
+    background: #0d1ad1;
+    background: linear-gradient(
+    90deg,
+    #0d1ad1 0%,
+    #3c8696 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.wrapper {
+    height: 700px;
+}
+.my-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.dark {
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+ 
+  footer a {
+    text-decoration: none;
+    color: unset;
+  }
+
+  .my-padding {
+    padding-top: 15rem;
+    padding-left: 5rem;
   }

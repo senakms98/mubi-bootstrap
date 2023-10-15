@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="shortcut icon"
+      href="./assets/images/icon.png"
+      type="image/x-icon"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
@@ -13,13 +18,94 @@
       src="https://kit.fontawesome.com/e626951ecb.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>MUBI</title>
   </head>
   <body>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Öneride Bulun
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form
+              action="https://formsubmit.co/senakms98@gmail.com"
+              method="POST"
+            >
+              <div class="mb-3">
+                <input
+                  class="form-control p-3"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="İsim soyisim"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  class="form-control p-3"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email adresi"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  class="form-control p-3"
+                  type="phone"
+                  id="phone"
+                  name="phone"
+                  placeholder="Telefon numarası"
+                  required
+                />
+              </div>
+              <div>
+                <textarea
+                  class="form-control"
+                  rows="7"
+                  id="message"
+                  name="message"
+                  placeholder="Mesajınız"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+
+          <div class="d-grid col-11 mx-auto mb-3">
+            <button class="btn btn-dark btn-lg rounded-pill" type="submit">
+              Gönder
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
       <div class="container px-5 py-2">
-        <a class="navbar-brand fw-semibold" href="#">Start Bootstrap</a>
+        <a class="navbar-brand fw-semibold" href="#">MUBI</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -37,95 +123,82 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Filmler</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Download</a>
+              <a class="nav-link me-lg-3" href="#">İndir</a>
             </li>
 
             <button
               type="button"
-              class="btn btn-primary"
+              class="btn btn-primary rounded-pill justify-content-center align-items-center"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
-              Launch demo modal
+              <i class="fa-solid fa-comment-dots"></i>
+              Öneride Bulun
             </button>
           </ul>
         </div>
       </div>
     </nav>
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <section class="section-fst">
       <div class="container">
-        <div class="row justify-content-center align-items-center">
+        <div
+          class="row justify-content-center align-items-center text-center text-lg-start"
+        >
           <div class="col-lg-6">
-            <h1 class="display-1 lh-1 mb-3">Showcase your app beautifully.</h1>
+            <h1 class="display-1 lh-1 mb-3">MUBI: Özenle seçilmiş filmler.</h1>
             <p class="lead fw-normal text-muted">
-              Launch your mobile app landing page faster with this free, open
-              source theme from Start Bootstrap!
+              MUBI'ye hoşgeldin. Hem usta yönetmenlerden hem de yeni
+              sanatçılardan harika filmler keşfet. Dünyanın her köşesinden.
+              Hepsini özenle seçtik.
             </p>
             <div
               class="mt-5 mb-5 d-flex flex-column flex-lg-row align-items-center"
             >
-              <a class="me-3" href="#" title=""
+              <a
+                class="mb-3 mb-lg-0 me-lg-3"
+                href="https://play.google.com/store/apps/details?id=com.mubi&hl=tr&gl=US"
+                title=""
                 ><img
                   class="app-btn"
                   src="./assets/images/google-play-badge.svg"
               /></a>
-              <a href="#" title=""
+              <a
+                href="https://apps.apple.com/tr/app/mubi-harika-filmler-i-zle/id626148774?l=tr"
+                title=""
                 ><img class="app-btn" src="./assets/images/app-store-badge.svg"
               /></a>
             </div>
           </div>
           <div class="col-lg-5">
-            <div class="d-flex align-items-center justify-content-center">
+            <div
+              class="d-flex align-items-center justify-content-center position-relative"
+            >
               <svg
-                class="circle"
+                class="circle d-none d-sm-block"
                 viewBox="0 0 100 100"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <defs>
                   <linearGradient id="grad1" gradientTransform="rotate(45)">
-                    <stop offset="0%" style="stop-color: #2937f0" />
-                    <stop offset="100%" style="stop-color: #9f1ae2" />
+                    <stop offset="0%" style="stop-color: #0d1ad1" />
+                    <stop offset="100%" style="stop-color: #3c8696" />
                   </linearGradient>
                 </defs>
                 <circle cx="50" cy="50" r="50" fill="url(#grad1)" />
               </svg>
               <svg
-                class="circle-sm"
+                class="d-flex circle-sm d-none d-sm-block"
+                viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="50" cy="50" r="50" />
+              </svg>
+              <svg
+                class="d-flex circle-sm-btm d-none d-sm-block"
                 viewBox="0 0 100 100"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -134,7 +207,7 @@
               <div class="phone-screen z-1">
                 <img
                   class="img-fluid"
-                  src="./assets/images/phone-screen.png"
+                  src="./assets/images/mubi.png"
                   alt="Uygulama Ekran Görüntüsü"
                 />
               </div>
@@ -148,12 +221,13 @@
         <div class="row justify-content-center">
           <div class="col-xl-8">
             <p class="fs-1 text-white">
-              "An intuitive solution to a common problem that we all face,
-              wrapped up in a single app!"
+              Dünyanın her köşesinden. Hepsini özenle seçtik. Birbirinden güzel
+              filmleri dilediğin zaman izle ya da indir. Tüm ekran ve
+              cihazlarda, dilediğin yerde.
             </p>
             <img
               class="img-fluid logo"
-              src="./assets/images/index.svg"
+              src="./assets/images/mubi_logo.png"
               alt=""
             />
           </div>
@@ -163,64 +237,77 @@
     <section class="py-5">
       <div class="container">
         <div class="row justify-content-center align-items-center">
-          <div class="col-lg-4">
-            <div class="d-flex align-items-center justify-content-center">
+          <div class="col-lg-4 order-2 order-lg-1">
+            <div
+              class="d-flex align-items-center justify-content-center position-relative"
+            >
               <svg
-                class="circle-scd"
+                class="circle-scd d-none d-sm-block"
                 viewBox="0 0 100 100"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <defs>
                   <linearGradient id="grad1" gradientTransform="rotate(45)">
-                    <stop offset="0%" style="stop-color: #2937f0" />
-                    <stop offset="100%" style="stop-color: #9f1ae2" />
+                    <stop offset="0%" style="stop-color: #0d1ad1" />
+                    <stop offset="100%" style="stop-color: #3c8696" />
                   </linearGradient>
                 </defs>
                 <circle cx="50" cy="50" r="50" fill="url(#grad1)" />
               </svg>
               <svg
-                class="circle-sm"
+                class="d-flex circle-scd-sm d-none d-sm-block"
                 viewBox="0 0 100 100"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <circle cx="50" cy="50" r="50" />
               </svg>
-              <div class="phone-screen z-1">
+              <svg
+                class="d-flex circle-scd-sm-btm d-none d-sm-block"
+                viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="50" cy="50" r="50" />
+              </svg>
+              <div class="phone-screen z-1 mb-5">
                 <img
                   class="img-fluid"
-                  src="./assets/images/phone-screen.png"
+                  src="./assets/images/ana-sayfa.png"
                   alt="Uygulama Ekran Görüntüsü"
                 />
               </div>
             </div>
           </div>
-          <div class="col-lg-8">
+          <div class="col-lg-8 order-1 order-lg-2">
             <div class="row justify-content-center px-5">
               <div class="col-lg-6 text-center">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <h1 class="fs-3 fw-semibold">Device Mockups</h1>
-                <p class="text-muted">
+                <i
+                  class="fa-solid fa-mobile-screen-button icon-size icon-gradient"
+                ></i>
+                <h1 class="font-kanit fs-3">Device Mockups</h1>
+                <p class="text-muted mb-5">
                   Ready to use HTML/CSS device mockups, no Photoshop required!
                 </p>
               </div>
               <div class="col-lg-6 text-center">
-                <i class="fa-solid fa-camera"></i>
+                <i class="fa-solid fa-camera icon-size icon-gradient"></i>
                 <h1 class="fs-3 fw-semibold">Device Mockups</h1>
-                <p class="text-muted">
+                <p class="text-muted mb-5">
                   Ready to use HTML/CSS device mockups, no Photoshop required!
                 </p>
               </div>
               <div class="col-lg-6 text-center">
-                <i class="fa-solid fa-gift"></i>
+                <i class="fa-solid fa-gift icon-size icon-gradient"></i>
                 <h1 class="fs-3 fw-semibold">Device Mockups</h1>
-                <p class="text-muted">
+                <p class="text-muted mb-5">
                   Ready to use HTML/CSS device mockups, no Photoshop required!
                 </p>
               </div>
               <div class="col-lg-6 text-center">
-                <i class="fa-regular fa-circle-check"></i>
+                <i
+                  class="fa-regular fa-circle-check icon-size icon-gradient"
+                ></i>
                 <h1 class="fs-3 fw-semibold">Device Mockups</h1>
-                <p class="text-muted">
+                <p class="text-muted mb-5">
                   Ready to use HTML/CSS device mockups, no Photoshop required!
                 </p>
               </div>
@@ -229,6 +316,101 @@
         </div>
       </div>
     </section>
+    <section class="bg-light">
+      <div class="container px-5 py-5">
+        <div
+          class="row gx-5 justify-content-center justify-content-lg-between align-items-center"
+        >
+          <div class="col-12 col-lg-5">
+            <h2 class="display-4 mb-4 lh-1">Klasikleri tekrar izle.</h2>
+            <p class="lead fw-normal text-muted">
+              Eşsiz film deneyimini çevrimdışı olarak yaşayın! Sinemanın
+              büyüsünü her an ve her yerde hissedin. En sevdiğiniz filmleri
+              çevrimdışı olarak indirin ve istediğiniz zaman izleyin. Kusursuz
+              görüntü kalitesiyle ve kesintisiz akışıyla favori filmlerinizi
+              kaçırmayın. Üstelik özel promosyonumuzla. Sinema deneyiminizi
+              özgürlükle yaşamak için şimdi indirin!
+            </p>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="px-5 justify-content-center">
+              <img
+                src="./assets/images/esb.webp"
+                alt="circle"
+                class="img-fluid rounded-circle py-5"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="position-relative wrapper">
+      <img
+        class="my-img object-fit-cover"
+        src="./assets/images/dmc.webp"
+        alt=""
+      />
+      <div class="dark"></div>
+      <div class="my-padding">
+        <div class="position-relative z-1 d-flex flex-column">
+          <div>
+            <h2 class="text-white display-1 lh-1 mb-4">
+              Aramıza katılın. <br />
+              3 aylık ücretsiz.
+            </h2>
+            <a
+              class="btn btn-outline-light py-3 px-4 rounded-pill"
+              href="https://mubi.com/tr/devices"
+              target="_blank"
+              >Hemen İndirin!</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gradient-bg py-5 px-5">
+      <div class="container">
+        <h2 class="text-white text-center font-kanit mb-4">
+          Dilediğin Zaman, Dilediğin Yerde İzlemeye Başla!
+        </h2>
+      </div>
+      <div
+        class="d-flex flex-column flex-lg-row align-items-center justify-content-center"
+      >
+        <a
+          href="https://play.google.com/store/apps/details?id=com.mubi&hl=tr&gl=US"
+        >
+          <img
+            class="app-btn mb-3 mb-lg-0"
+            src="./assets/images/google-play-badge.svg"
+            alt="Google Playstore"
+          />
+        </a>
+        <a
+          href="https://apps.apple.com/tr/app/mubi-harika-filmler-i-zle/id626148774?l=tr"
+        >
+          <img
+            src="./assets/images/app-store-badge.svg"
+            alt="App Store"
+            class="mx-3 app-btn"
+          />
+        </a>
+      </div>
+    </section>
+    <footer class="bg-black py-5 text-center">
+      <div class="container">
+        <div class="text-white-50 small">
+          <p class="mb-2">© Sena Okumuş 2023. Tüm Hakları Saklıdır.</p>
+        </div>
+        <div class="text-white-50 small justify-content-center gap-2">
+          <a href="#">Gizlilik</a>
+          <span class="mx-1">·</span>
+          <a href="#">Şartlar</a>
+          <span class="mx-1">·</span>
+          <a href="#">S.S.S</a>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
